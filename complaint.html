@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#193b35"><title>KLG Citizen Complaint Portal</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body class="portal-page">
+  <header class="site-header portal-header"><a class="brand" href="index.html"><span class="brand-mark">KLG</span><span class="brand-copy"><strong class="brand-name"><span>KUBAU</span><span>LOCAL GOVERNMENT</span></strong><span class="brand-subtitle"><span class="desktop-name">Revenue Management System</span><span class="mobile-name">Revenue System</span></span></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="main-nav"><a href="index.html#services">Revenue Services</a><a href="verify.html">Verify receipt</a><a class="button button-small button-outline" href="index.html">Back to home</a></nav></header>
+  <main class="portal-main">
+    <div class="portal-intro"><a href="index.html" class="back-link">← Home</a><span class="eyebrow eyebrow-blue">CITIZEN SUPPORT</span><h1>Kubau Local Government</h1><h2>Citizen Complaint Portal</h2><p>Your concerns matter. Submit a complaint and use your complaint ID to track its progress.</p></div>
+    <div class="portal-layout">
+      <section class="form-card"><div class="form-heading"><span class="service-icon icon-teal">✉</span><div><h3>Submit a complaint</h3><p>Fields marked with * are required.</p></div></div>
+        <form id="complaint-form"><div class="form-row"><label>Full name *<input name="name" autocomplete="name" required placeholder="Enter your full name"></label><label>Phone number *<input name="phone" autocomplete="tel" required inputmode="tel" placeholder="e.g. 080 0000 0000"></label></div>
+          <label>Email address <span class="optional">(optional)</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+          <div class="form-row"><label>Issue type *<select name="category" required><option value="">Select a local issue</option><option>Blocked drainage or flooding</option><option>Waste collection or illegal dumping</option><option>Damaged road or pothole</option><option>Water supply problem</option><option>Streetlight or public lighting</option><option>Public facility maintenance</option><option>Environmental sanitation</option><option>Revenue payment or receipt</option><option>Other community concern</option></select></label><label>Area or community *<input name="area" required placeholder="e.g. Anchau"></label></div>
+          <label>Nearest landmark <span class="optional">(optional)</span><input name="landmark" placeholder="Street, junction, school, market, or other landmark"></label>
+          <label>Describe the issue *<textarea name="message" required rows="5" placeholder="Tell us what is happening, where it is happening, and how it affects the community."></textarea></label>
+          <p class="form-privacy">Reports are saved only in this browser so you can try the citizen tracking and admin examples. Do not enter real personal, financial, or sensitive information; reports are not sent to the council.</p>
+          <button class="button button-primary" type="submit">Submit complaint <span>→</span></button><div class="form-result" id="complaint-result" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+      <aside class="side-card" id="track"><span class="eyebrow eyebrow-blue">COMPLAINT FOLLOW-UP</span><h3>Track a complaint</h3><p>Enter the reference ID provided when your complaint was recorded.</p><form id="track-form"><label>Complaint reference ID<input name="complaintId" required placeholder="e.g. CMP-2026-10482"></label><button class="button button-outline button-full" type="submit">Check status</button><div class="form-result" id="track-result" role="status" aria-live="polite"></div></form><div class="side-divider"></div><div class="info-note"><span>i</span><p>This page uses browser-only sample records and does not send reports to council staff.</p></div><div class="side-divider"></div><a class="side-menu-link" href="user.html">Back to citizen dashboard <b>→</b></a></aside>
+    </div>
+  </main>
+  <footer class="simple-footer"><span>© 2026 Kubau Local Government · Revenue Management System</span><a href="user.html">Citizen dashboard</a><a href="index.html">Home</a><a href="verify.html">Verify receipt</a></footer>
+</body></html>
