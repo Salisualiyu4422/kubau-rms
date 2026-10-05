@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153b32">
+  <title>Sign in | KUB-ISMIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="login-body">
+  <main class="login-layout">
+    <section class="login-identity">
+      <a class="login-brand" href="login.html"><span class="brand-seal"><i class="fa-solid fa-landmark"></i></span><span><strong>KUBAU LGA</strong><small>KUB-ISMIS</small></span></a>
+      <div class="identity-content"><span class="eyebrow">A DIGITAL-FIRST SECRETARIAT</span><h1>Better coordination.<br>Clearer public service.</h1><p>A connected workspace for local government administration, revenue oversight, and responsive community services.</p><div class="identity-metrics"><div><strong>14</strong><span>Departments</span></div><i></i><div><strong>1,248</strong><span>Staff records</span></div><i></i><div><strong>2026</strong><span>Service year</span></div></div></div>
+      <div class="identity-footer"><span><i class="fa-solid fa-shield-halved"></i> Secure demonstration environment</span><span>Designed for Kubau Local Government Area</span></div>
+    </section>
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="login-heading"><span class="eyebrow">WELCOME BACK</span><h2>Sign in to your workspace</h2><p>Enter your staff credentials to continue.</p></div>
+        <form id="login-form" class="login-form">
+          <label for="staff-id">Staff ID / Email</label><div class="input-wrap"><i class="fa-regular fa-user"></i><input id="staff-id" name="staffId" type="text" autocomplete="username" placeholder="e.g. KLG-ADM-001 or name@kubau.gov.ng" required></div>
+          <label for="password">Password</label><div class="input-wrap"><i class="fa-solid fa-lock"></i><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button class="password-toggle" type="button" id="toggle-password" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div>
+          <div class="login-options"><label class="checkbox-label"><input type="checkbox" name="remember"> <span>Remember me</span></label><button class="text-button" type="button" data-toast="Password recovery is not connected in this frontend prototype.">Forgot password?</button></div>
+          <button class="button button-primary login-submit" type="submit">Sign in <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="login-error" id="login-error" role="alert"></p>
+        </form>
+        <div class="security-note"><i class="fa-solid fa-shield-halved"></i><span><strong>Security notice</strong><small>This demonstration accepts any non-empty credentials. Do not enter real passwords or sensitive information.</small></span></div>
+        <p class="prototype-label">KUB-ISMIS · FRONTEND PROTOTYPE · NOT AN OFFICIAL GOVERNMENT WEBSITE</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
